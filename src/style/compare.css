@@ -1,0 +1,130 @@
+.app {
+  text-align: center;
+  margin: 20px;
+}
+
+.product {
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  display: block;
+  flex-grow: 1; /* Cho phép ô sản phẩm mở rộng để điền hết không gian */
+  flex-basis: calc(33.33% - 20px); /* Tính giá trị flex-basis dựa trên số ô sản phẩm trên mỗi dòng và khoảng cách giữa chúng */
+  max-width: 200px; /* Giữ cho ô sản phẩm không mở rộng quá kích thước này */
+  box-sizing: border-box; /* Giữ cho padding và border không làm tăng kích thước của ô sản phẩm */
+}
+
+.product:hover {
+  background-color: #5c5c5c;
+}
+
+.product.selected {
+  background-color: #3d8dd2;
+  border-color: #007bff; /* Màu viền khi sản phẩm được chọn */
+
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.comparison-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  
+  margin-bottom: 20px; 
+}
+
+.product-details {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 45%;
+}
+
+.product-details h2 {
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-weight: bold;
+}
+
+.product-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-details li {
+  margin-bottom: 5px;
+}
+
+.product-details table {
+  width: 100%;
+}
+
+.product-details table p {
+  margin: 0; /* Loại bỏ margin mặc định của các đoạn văn bản */
+}
+
+/* compare.css */
+.product-image {
+  width: 150px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h4{
+  color: rgba(255, 0, 0, 0.622);
+}
+/* compare.css */
+
+/* Ô tìm kiếm */
+.search{
+width: 20%;
+padding: 10px;
+margin: 10px 0;
+box-sizing: border-box;
+}
+
+/* Nút reset */
+.reset-button {
+background-color: #0f0356; /* Màu đỏ cho nút reset */
+color: #fff;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+background-color: #c9302c; /* Màu đỏ đậm khi di chuột qua */
+}
+.text2{
+  height: 350px;
+}

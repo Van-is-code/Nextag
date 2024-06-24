@@ -1,0 +1,81 @@
+/* Default styles for larger screens */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #01092a;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.navbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    position: relative;
+}
+
+.navbar .leftSide img {
+    width: 70px;
+    position: relative;
+}
+
+.navbar .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+}
+
+.navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar .rightSide svg {
+    font-size: 40px;
+    position: relative;
+}
+
+.logo {
+    width: 200%;
+    height: 60%;
+    position: relative;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .navbar .leftSide,
+    .navbar .rightSide {
+        flex: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar .leftSide img {
+        width: 50px;
+    }
+
+    .navbar a {
+        margin: 10px;
+    }
+}
